@@ -5,7 +5,7 @@ class CreateGame extends Component {
     super(props);
     this.state = {
       name: "",
-      pass: "",
+      password: "",
       players: {}
     }
   }
@@ -13,11 +13,11 @@ class CreateGame extends Component {
     this.setState({name: event.target.value});
   }
   handlePassChange = (event) => {
-    this.setState({pass: event.target.value});
+    this.setState({password: event.target.value});
   }
   createGame = () => {
     var game = this.state;
-    window.socket.emit('create game', { settings: game });
+    window.socket.emit('create game', game);
   }
   render() {
     return (
