@@ -6,6 +6,9 @@ import AppTemplate from "./components/AppTemplate"
 import PageHome from './components/PageHome'
 import PageGame from './components/PageGame'
 class App extends Component {
+  componentDidMount(){
+    
+  }
   render() {
     return (
       <div className="App container">

@@ -16,7 +16,8 @@ class CreateGame extends Component {
     this.setState({pass: event.target.value});
   }
   createGame = () => {
-
+    var game = this.state;
+    window.socket.emit('create game', { settings: game });
   }
   render() {
     return (
