@@ -16,10 +16,14 @@
     <title>React App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
 
+    <script src="http://localhost:3001/socket.io/socket.io.js">    </script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
  <!-- Compiled and minified JavaScript -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
   </head>
   <body>
+    <script>var socket = io("http://localhost:3001")</script>
     <div id="root"></div>
     <!--
       This HTML file is a template.
